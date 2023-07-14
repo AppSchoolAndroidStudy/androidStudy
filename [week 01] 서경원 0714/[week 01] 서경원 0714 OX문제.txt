@@ -1,0 +1,7 @@
+[1]
+내부 저장소를 사용할 때는 FileInputStream, FileOutputStream을 사용하고,
+외부 저장소를 사용할 때는 openFileOutput, openFileInput을 사용한다.
+
+[2]
+Preference Screen의 Switch Preference에서
+SwitchtextOn, SwitchtextOff는 스위치를 켜고 끌 때, 반응형으로 text가 바뀐다.
