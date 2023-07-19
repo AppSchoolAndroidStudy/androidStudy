@@ -78,7 +78,6 @@ class CategoryMainFragment : Fragment() {
             categoryRecyclerView.run{
                 adapter = CategoryMainRecyclerViewAdapter()
                 layoutManager = LinearLayoutManager(mainActivity)
-                addItemDecoration(DividerItemDecoration(mainActivity, DividerItemDecoration.VERTICAL))
             }
         }
 
