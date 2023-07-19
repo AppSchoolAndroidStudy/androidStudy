@@ -100,7 +100,7 @@ class CategoryMainFragment : Fragment() {
                     // 첫번째 메뉴 (카테고리 삭제 수정)
                     contextMenu[0].setOnMenuItemClickListener {
                         val categoryMainInputDialogBinding = CategoryMainInputDialogBinding.inflate(layoutInflater)
-                        val builder = AlertDialog.Builder(mainActivity)
+                        val builder = MaterialAlertDialogBuilder(mainActivity, R.style.ThemeOverlay_App_MaterialAlertDialog)
                         builder.setTitle("카테고리 수정")
                         builder.setView(categoryMainInputDialogBinding.root)
                         categoryMainInputDialogBinding.dialogInput.setText(categoryDataList[adapterPosition].categoryName)
