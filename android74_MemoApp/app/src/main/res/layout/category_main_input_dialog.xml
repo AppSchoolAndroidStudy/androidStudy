@@ -11,5 +11,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="새로운 카테고리 이름"
-        android:inputType="text" />
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"/>
 </LinearLayout>

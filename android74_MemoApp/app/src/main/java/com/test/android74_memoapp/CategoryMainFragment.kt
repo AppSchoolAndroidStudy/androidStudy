@@ -12,6 +12,7 @@ import androidx.core.view.get
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.test.android74_memoapp.databinding.CategoryMainInputDialogBinding
 import com.test.android74_memoapp.databinding.FragmentCategoryMainBinding
 import com.test.android74_memoapp.databinding.RowMainBinding
@@ -47,7 +48,8 @@ class CategoryMainFragment : Fragment() {
 
                     when(it.itemId){
                         R.id.categoryMainItem1 -> {
-                            val builder = AlertDialog.Builder(mainActivity)
+//                            val builder = AlertDialog.Builder(mainActivity)
+                            val builder = MaterialAlertDialogBuilder(mainActivity, R.style.ThemeOverlay_App_MaterialAlertDialog)
                             builder.setTitle("카테고리 이름 입력")
                             val categoryMainInputDialogBinding = CategoryMainInputDialogBinding.inflate(layoutInflater)
                             builder.setView(categoryMainInputDialogBinding.root)

@@ -3,4 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="splashBackground">#FFEB3B</color>
+    <color name="beige">#fff9e8</color>
+    <color name="soda">#a6c8ff</color>
+    <color name="grey">#c2c2c2</color>
 </resources>
