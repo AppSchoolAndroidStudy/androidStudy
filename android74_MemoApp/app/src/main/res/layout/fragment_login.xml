@@ -28,26 +28,29 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10dp" >
+            android:padding="10dp">
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/outlinedTextField"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="비밀번호"
-                app:startIconDrawable="@drawable/ic_password"
-                app:startIconTint="@null"
+                app:boxBackgroundColor="@color/white"
+                app:hintTextColor="@color/soda"
                 app:endIconMode="password_toggle"
                 app:endIconTint="@color/black"
-                app:boxBackgroundColor="@color/white"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                app:startIconDrawable="@drawable/ic_password"
+                app:startIconTint="@null"
+                app:boxStrokeColor="@color/soda">
+
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/loginPw"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPassword"
-                    android:textColor="@color/black"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/black" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
@@ -55,8 +58,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:elevation="10dp"
                 android:text="로그인"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:cornerRadius="30dp"
+                app:backgroundTint="@color/soda"
+                style="@style/Widget.Material3.Button.ElevatedButton.Icon"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
