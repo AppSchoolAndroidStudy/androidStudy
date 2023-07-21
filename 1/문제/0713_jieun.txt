@@ -1,5 +1,0 @@
-1. 앱A의 데이터를 사용하기 위해서는 앱B에 ContentProvider를 생성해야 한다.
-( O / X )
-
-2. execSQL메서드의 매개변수로 insert, select, delete 쿼리문을 사용할 수 있다.
-( O / X )
