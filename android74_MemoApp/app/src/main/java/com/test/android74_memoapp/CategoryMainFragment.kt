@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.google.android.material.divider.MaterialDividerItemDecoration
 import com.test.android74_memoapp.databinding.CategoryMainInputDialogBinding
 import com.test.android74_memoapp.databinding.FragmentCategoryMainBinding
 import com.test.android74_memoapp.databinding.RowMainBinding
@@ -78,6 +79,12 @@ class CategoryMainFragment : Fragment() {
             categoryRecyclerView.run{
                 adapter = CategoryMainRecyclerViewAdapter()
                 layoutManager = LinearLayoutManager(mainActivity)
+
+                val divider = MaterialDividerItemDecoration(mainActivity, LinearLayoutManager.VERTICAL)
+                divider.setDividerColorResource(mainActivity,R.color.soda)
+                divider.dividerInsetStart = 70
+                divider.dividerInsetEnd = 70
+                addItemDecoration(divider)
             }
         }
 
