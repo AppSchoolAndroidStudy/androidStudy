@@ -4,7 +4,7 @@
 
     <item
         android:id="@+id/categoryMainItem1"
-        android:icon="@android:drawable/ic_menu_add"
+        android:icon="@drawable/add_circle"
         android:title="Item"
-        app:showAsAction="always"/>
+        app:showAsAction="always" />
 </menu>
