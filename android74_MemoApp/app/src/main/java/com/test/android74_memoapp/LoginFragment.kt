@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AlertDialog
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.test.android74_memoapp.databinding.FragmentLoginBinding
 
 
@@ -53,7 +54,7 @@ class LoginFragment : Fragment() {
             val passwordClass = PasswordDAO.selectOne(mainActivity, 1)
 
             if(str1.length == 0){
-                val builder = AlertDialog.Builder(mainActivity)
+                val builder = MaterialAlertDialogBuilder(mainActivity, R.style.ThemeOverlay_App_MaterialAlertDialog)
                 builder.setTitle("로그인 오류")
                 builder.setMessage("비밀번호를 입력해주세요")
                 builder.setPositiveButton("확인"){ dialogInterface: DialogInterface, i: Int ->
@@ -65,7 +66,7 @@ class LoginFragment : Fragment() {
 
             // 입력한 비빌번호와 저장된 비빌번호가 다르다면..
             if(str1 != passwordClass?.passwordData){
-                val builder = AlertDialog.Builder(mainActivity)
+                val builder = MaterialAlertDialogBuilder(mainActivity, R.style.ThemeOverlay_App_MaterialAlertDialog)
                 builder.setTitle("비빌번호 오류")
                 builder.setMessage("비빌번호를 잘못 입력하였습니다")
                 builder.setPositiveButton("확인"){ dialogInterface: DialogInterface, i: Int ->
@@ -76,7 +77,7 @@ class LoginFragment : Fragment() {
                 return
             }
 
-            val builder = AlertDialog.Builder(mainActivity)
+            val builder = MaterialAlertDialogBuilder(mainActivity, R.style.ThemeOverlay_App_MaterialAlertDialog)
             builder.setTitle("로그인 성공")
             builder.setMessage("로그인에 성공하였습니다")
             builder.setPositiveButton("확인"){ dialogInterface: DialogInterface, i: Int ->

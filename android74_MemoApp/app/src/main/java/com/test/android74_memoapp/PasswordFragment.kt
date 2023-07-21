@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AlertDialog
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.test.android74_memoapp.databinding.FragmentPasswordBinding
 
 
@@ -59,7 +60,7 @@ class PasswordFragment : Fragment() {
             val str2 = userPw2.text.toString()
 
             if(str1.length == 0){
-                val builder = AlertDialog.Builder(mainActivity)
+                val builder = MaterialAlertDialogBuilder(mainActivity, R.style.ThemeOverlay_App_MaterialAlertDialog)
                 builder.setTitle("비빌번호 입력 오류")
                 builder.setMessage("비밀번호를 입력해주세요")
                 builder.setPositiveButton("확인"){ dialogInterface: DialogInterface, i: Int ->
@@ -70,7 +71,7 @@ class PasswordFragment : Fragment() {
             }
 
             if(str2.length == 0){
-                val builder = AlertDialog.Builder(mainActivity)
+                val builder = MaterialAlertDialogBuilder(mainActivity, R.style.ThemeOverlay_App_MaterialAlertDialog)
                 builder.setTitle("비빌번호 입력 오류")
                 builder.setMessage("비밀번호를 입력해주세요")
                 builder.setPositiveButton("확인"){ dialogInterface: DialogInterface, i: Int ->
@@ -81,7 +82,7 @@ class PasswordFragment : Fragment() {
             }
 
             if(str1 != str2){
-                val builder = AlertDialog.Builder(mainActivity)
+                val builder = MaterialAlertDialogBuilder(mainActivity, R.style.ThemeOverlay_App_MaterialAlertDialog)
                 builder.setTitle("비빌번호 입력 오류")
                 builder.setMessage("비빌번호를 다르게 입력하였습니다")
                 builder.setPositiveButton("확인"){ dialogInterface: DialogInterface, i: Int ->
@@ -93,7 +94,7 @@ class PasswordFragment : Fragment() {
                 return
             }
 
-            val builder = AlertDialog.Builder(mainActivity)
+            val builder = MaterialAlertDialogBuilder(mainActivity, R.style.ThemeOverlay_App_MaterialAlertDialog)
             builder.setTitle("설정 완료")
             builder.setMessage("비빌번호 설정이 완료되었습니다")
             builder.setPositiveButton("확인"){ dialogInterface: DialogInterface, i: Int ->

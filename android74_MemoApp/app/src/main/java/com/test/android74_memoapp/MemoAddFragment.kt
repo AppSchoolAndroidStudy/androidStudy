@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AlertDialog
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.test.android74_memoapp.databinding.FragmentMemoAddBinding
 import java.text.SimpleDateFormat
 import java.util.Date
@@ -50,7 +51,7 @@ class MemoAddFragment : Fragment() {
 
 
                             if(str1.length == 0){
-                                val builder = AlertDialog.Builder(mainActivity)
+                                val builder = MaterialAlertDialogBuilder(mainActivity, R.style.ThemeOverlay_App_MaterialAlertDialog)
                                 builder.setTitle("제목 입력 오류")
                                 builder.setMessage("제목을 입력해주세요")
                                 builder.setPositiveButton("확인"){ dialogInterface: DialogInterface, i: Int ->
@@ -61,7 +62,7 @@ class MemoAddFragment : Fragment() {
                             }
 
                             if(str2.length == 0){
-                                val builder = AlertDialog.Builder(mainActivity)
+                                val builder = MaterialAlertDialogBuilder(mainActivity, R.style.ThemeOverlay_App_MaterialAlertDialog)
                                 builder.setTitle("내용 입력 오류")
                                 builder.setMessage("내용을 입력해주세요")
                                 builder.setPositiveButton("확인"){ dialogInterface: DialogInterface, i: Int ->

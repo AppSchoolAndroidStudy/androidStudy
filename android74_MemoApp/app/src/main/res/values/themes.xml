@@ -25,6 +25,7 @@
         <item name="colorSurface">@color/beige</item>
         <item name="alertDialogStyle">@style/MaterialAlertDialog.App</item>
         <item name="materialAlertDialogTitleTextStyle">@style/MaterialAlertDialog.App.Title.Text</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/MaterialAlertDialog.App.Body.Text</item>
         <item name="buttonBarPositiveButtonStyle">@style/Widget.App.PositiveButton</item>
         <item name="buttonBarNeutralButtonStyle">@style/Widget.App.NegativeButton</item>
     </style>

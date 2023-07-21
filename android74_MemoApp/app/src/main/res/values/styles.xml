@@ -8,9 +8,13 @@
         <item name="android:textColor">@color/black</item>
     </style>
 
+    <style name="MaterialAlertDialog.App.Body.Text" parent="@style/TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@color/brown</item>
+    </style>
+
     <style name="Widget.App.PositiveButton" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
         <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
-        <item name="android:textColor">@color/soda</item>
+        <item name="android:textColor">@color/brown</item>
     </style>
 
     <style name="Widget.App.NegativeButton" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
