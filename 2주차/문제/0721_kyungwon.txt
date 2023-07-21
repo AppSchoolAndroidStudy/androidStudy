@@ -1,0 +1,4 @@
+안드로이드에서 서버와 데이터를 송수신할 때 Thread로만 운영해야 하는 이유는 무엇일까?
+
+Compass 를 만들 때 사용하는 Azimuth, pitch, roll 값은 센서에서 측정하면 Double의 형태로 출력된다.	[ O / X ]
+
