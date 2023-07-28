@@ -1,0 +1,2 @@
+1. 항목이 많지 않으면 체크박스나 라디오 박스 대신 쓸 수 있는 요소는 Button Check Group 이다.( O / X )
+2. Naviagition Rail은 모바일 어플리케이션에서 많이 쓰이는 요소이다.( O / X )
