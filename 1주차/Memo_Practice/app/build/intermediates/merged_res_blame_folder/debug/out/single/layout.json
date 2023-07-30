@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/Users/skw/.gradle/daemon/8.0/com.woojugoing.project_skw_0710.app-mergeDebugResources-27:/layout/fragment_result.xml",
+        "source": "/Users/skw/.gradle/daemon/8.0/com.woojugoing.project_skw_0710.app-main-30:/layout/fragment_result.xml"
+    },
+    {
+        "merged": "/Users/skw/.gradle/daemon/8.0/com.woojugoing.project_skw_0710.app-mergeDebugResources-27:/layout/activity_main.xml",
+        "source": "/Users/skw/.gradle/daemon/8.0/com.woojugoing.project_skw_0710.app-main-30:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/skw/.gradle/daemon/8.0/com.woojugoing.project_skw_0710.app-mergeDebugResources-27:/layout/fragment_edit.xml",
+        "source": "/Users/skw/.gradle/daemon/8.0/com.woojugoing.project_skw_0710.app-main-30:/layout/fragment_edit.xml"
+    },
+    {
+        "merged": "/Users/skw/.gradle/daemon/8.0/com.woojugoing.project_skw_0710.app-mergeDebugResources-27:/layout/fragment_input.xml",
+        "source": "/Users/skw/.gradle/daemon/8.0/com.woojugoing.project_skw_0710.app-main-30:/layout/fragment_input.xml"
+    },
+    {
+        "merged": "com.woojugoing.project_skw_0710.app-mergeDebugResources-27:/layout/fragment_main.xml",
+        "source": "com.woojugoing.project_skw_0710.app-main-30:/layout/fragment_main.xml"
+    },
+    {
+        "merged": "/Users/skw/.gradle/daemon/8.0/com.woojugoing.project_skw_0710.app-mergeDebugResources-27:/layout/fragment_add.xml",
+        "source": "/Users/skw/.gradle/daemon/8.0/com.woojugoing.project_skw_0710.app-main-30:/layout/fragment_add.xml"
+    },
+    {
+        "merged": "/Users/skw/.gradle/daemon/8.0/com.woojugoing.project_skw_0710.app-mergeDebugResources-27:/layout/fragment_main.xml",
+        "source": "/Users/skw/.gradle/daemon/8.0/com.woojugoing.project_skw_0710.app-main-30:/layout/fragment_main.xml"
+    },
+    {
+        "merged": "/Users/skw/.gradle/daemon/8.0/com.woojugoing.project_skw_0710.app-mergeDebugResources-27:/layout/row_main.xml",
+        "source": "/Users/skw/.gradle/daemon/8.0/com.woojugoing.project_skw_0710.app-main-30:/layout/row_main.xml"
+    }
+]
