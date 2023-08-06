@@ -1,0 +1,4 @@
+1. LiveData와 MutableLiveData의 차이점에 대해 설명하세요.
+
+2. MVVM의 장단점을 설명하세요.
+
