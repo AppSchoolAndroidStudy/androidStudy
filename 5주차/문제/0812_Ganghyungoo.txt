@@ -1,0 +1,4 @@
+1. 개발 도중 뒤로가기를 커스텀 해야할 때가 있다 하지만 API 레벨 33부터 액티비티 컴포넌트의 onBackPressed()메서드가 deprecated되면서 OnBackPressedCallback()인스턴스로 커스텀 해야한다.[O/X]
+ㄴ(참고:https://developer.android.com/guide/navigation/navigation-custom-back?hl=ko)
+2. 앨범에서 사진을 가져올 때 안드로이드 10이상일 때와 미만일 때 이미지를 가져오는 방식의 차이점을 간단하게 설명해보시오
+ㄴ(참고: 강사님과 함께한 실습 getAlbum편)
