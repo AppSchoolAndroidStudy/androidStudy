@@ -1,0 +1,2 @@
+1. Java와 Kotlin의 null 처리에 대한 차이점
+2. git merge와 rebase의 차이점

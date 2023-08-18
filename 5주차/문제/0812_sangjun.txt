@@ -1,0 +1,3 @@
+1. Handler와 Looper의 관계에 대해 설명
+
+2. data class와 일반 클래스의 차이점
