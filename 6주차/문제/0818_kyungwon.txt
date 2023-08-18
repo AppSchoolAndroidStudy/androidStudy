@@ -1,0 +1,5 @@
+[1]
+Serializable과 Parceable의 특징과 차이점에 대해서 설명하세요.
+
+[2]
+Abstract Class와 Interface의 차이를 설명하세요.
