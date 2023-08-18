@@ -38,13 +38,20 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        // LiveData 관찰하여 데이터 변경에 대한 UI 업데이트
-        viewModel.testDataList.observe(this) { testDataList ->
-            setData(testDataList as MutableList<TestDataClass>)
-        }
 
         // 데이터 가져오기 시작
         viewModel.fetchTestData()
+
+
+
+        // LiveData 관찰하여 데이터 변경에 대한 UI 업데이트
+        viewModel.testDataList.observe(this) { testDataList ->
+            adapter.setData(testDataList as MutableList<TestDataClass>)
+        }
+
+
+
+
     }
 
     inner class TestRecyclerViewAdapter : RecyclerView.Adapter<TestRecyclerViewAdapter.TestViewHolder>(){
@@ -78,6 +85,11 @@ class MainActivity : AppCompatActivity() {
             holder.textViewRow1.text = dataList[position].title
         }
 
+        fun setData(newData: MutableList<TestDataClass>) {
+            dataList = newData
+            activityMainBinding.recyclerViewMain.adapter?.notifyDataSetChanged()
+        }
+
     }
 
     override fun onResume() {
@@ -85,8 +97,5 @@ class MainActivity : AppCompatActivity() {
     }
 
     // 데이터 변경을 위한 함수
-    fun setData(newData: MutableList<TestDataClass>) {
-        dataList = newData
-        activityMainBinding.recyclerViewMain.adapter?.notifyDataSetChanged()
-    }
+
 }
