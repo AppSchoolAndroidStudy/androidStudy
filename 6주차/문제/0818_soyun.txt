@@ -1,0 +1,2 @@
+1. 구글에서 안드로이드 개발 시 coroutine 사용을 권장하는 이유는 Main Thread 블로킹 현상을 줄일 수 있기 때문이다 (O/X)
+2. Coroutine이 나오기 전에는 네트워크 통해 데이터를 가져와 ui상에 적용할 때 thread와 callBack 함수를 사용하여 처리했다(O/X)
