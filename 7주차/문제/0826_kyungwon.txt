@@ -1,0 +1,2 @@
+[01] ListView와 RecylcerView의 차이점에 대해서 설명하세요.
+[02] Clean Architecture의 3계층에 대해서 설명하시오.
