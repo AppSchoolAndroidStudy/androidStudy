@@ -1,0 +1,4 @@
+
+1. Fragment의 생명주기 중 onCreatView()와 onViewCreated()에 대해 설명해보세요.
+
+2. Squash&merge와 rebase&merge의 차이점을 설명해보세요.
