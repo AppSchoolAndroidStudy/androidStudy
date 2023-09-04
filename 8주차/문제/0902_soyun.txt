@@ -1,0 +1,4 @@
+1. 주어진 단계들을 올바른 MVVM 패턴 순서대로 배치하시오.
+- (1)사용자 Action (2)ViewModel (3)Model (4)View (5)ViewModel (6)사용자 (7)View
+
+2. context를 설명하시오.
