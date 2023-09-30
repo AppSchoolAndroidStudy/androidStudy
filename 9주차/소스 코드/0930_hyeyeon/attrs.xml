@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomViewLoginButton">
+        <attr name="loginButtonLogo" format="integer" />
+        <attr name="loginButtonTitle" format="string" />
+        <attr name="loginButtonBackgroundColor" format="color" />
+        <attr name="loginButtonTextColor" format="color" />
+    </declare-styleable>
+</resources>
