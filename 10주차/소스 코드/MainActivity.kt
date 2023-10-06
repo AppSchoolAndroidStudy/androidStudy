@@ -20,9 +20,5 @@ class MainActivity : AppCompatActivity() {
 
         binding.lifecycleOwner = this
         binding.changeNumViewModel = changeNumViewModel
-
-        changeNumViewModel.currentNum.observe(this) { newNum ->
-            binding.textViewCurrentNumber.text = newNum.toString()
-        }
     }
 }
