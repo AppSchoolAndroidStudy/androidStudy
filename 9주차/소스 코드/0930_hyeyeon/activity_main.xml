@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="CustomViewLogin"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.androidstudy.customview.LoginButtonCustomView
+        android:id="@+id/login_button_custom_view_google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:loginButtonBackgroundColor="@color/white"
+        app:loginButtonTextColor="@color/black"
+        app:loginButtonLogo="@drawable/logo_google"
+        app:loginButtonTitle="구글 로그인" />
+
+    <com.androidstudy.customview.LoginButtonCustomView
+        android:id="@+id/login_button_custom_view_kakao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_button_custom_view_google"
+        app:loginButtonBackgroundColor="#FFE402"
+        app:loginButtonTextColor="#3B1E1E"
+        app:loginButtonLogo="@drawable/logo_kakao"
+        app:loginButtonTitle="카카오 로그인" />
+
+    <com.androidstudy.customview.LoginButtonCustomView
+        android:id="@+id/login_button_custom_view_naver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_button_custom_view_kakao"
+        app:loginButtonBackgroundColor="#03C75A"
+        app:loginButtonTextColor="@color/white"
+        app:loginButtonLogo="@drawable/logo_naver"
+        app:loginButtonTitle="네이버 로그인" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
