@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="changeNumViewModel"
+            type="com.androidstudy.databinding.ChangeNumViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textView_current_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{changeNumViewModel.currentNum.toString()}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toTopOf="@id/button_decrease"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- android:onClick 속성
+            : 람다 표현식(() ->)으로 시작
+            : 클릭 이벤트가 발생할 때 호출할 메서드를 나타냄
+            : 장점 - 코드에서 직접 클릭 리스너를 설정하는 것보다 간편하게 클릭 이벤트를 처리
+                  - 클릭 이벤트 로직이 XML에 있으면 유지보수 용이 -> 레이아웃과 관련된 동작을 명확히 이해할 수 있어서
+        -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_decrease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{() -> changeNumViewModel.decreaseNum()}"
+            android:text="감소"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/button_increase"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_current_number" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_increase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{() -> changeNumViewModel.increaseNum()}"
+            android:text="증가"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/button_decrease"
+            app:layout_constraintTop_toTopOf="@id/button_decrease" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
