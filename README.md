@@ -5,7 +5,7 @@
 ### 스터디 장소
 - 온라인
 ### 정기 스터디 시간
-- 금요일 18:05 ~ 19:35 [1h 30m]
+- 토요일 10:30 ~ 11:30 [1h 30m]
 ### 언어
 <img src="https://img.shields.io/badge/kotlin-007396.svg?&style=for-the-badge&logo=kotlin&logoColor=white"> 
 
